@@ -5,13 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Registro de Juegos</title>
+    <style>
+        /* Estilos mínimos para visualización */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0 1rem; }
+        header { background:#0b5ed7; color:#fff; padding:1rem; }
+        nav a { color:#fff; margin-right:1rem; text-decoration:none; }
+        section { padding:1rem 0; border-bottom:1px solid #eee; }
+        main { max-width:900px; margin:0 auto; }
+    </style>
 </head>
 <body>
-    <h1>Hola mundo</h1>
-    <p>primer mensaje <br>
-        para probar git
-    </p>
-    <!-- coloca aquí el contenido HTML de la página -->
+    <header>
+        <h1>Sistema de Registro de Juegos</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#alumno">Alumno</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" aria-labelledby="inicio-title">
+            <h2 id="inicio-title">Inicio</h2>
+            <h3>Hola mundo</h3>
+            <p>primer mensaje <br>para probar git</p>
+        </section>
+
+        <section id="alumno" aria-labelledby="alumno-title">
+            <h2 id="alumno-title">Alumno</h2>
+            <h3>Correo: nahun@gmail.com</h3>
+            <p>Alumno</p>
+        </section>
+
+        <section id="contacto" aria-labelledby="contacto-title">
+            <h2 id="contacto-title">Contacto</h2>
+            <h3>Correo: infa@gmail.com</h3>
+            <p>Instructor</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Sistema de Registro</p>
+    </footer>
+
     <script src="app.js" defer></script>
 </body>
 </html>
