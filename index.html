@@ -5,8 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Registro de Juegos</title>
+    <style>
+        /* Estilos mínimos */
+        :root { --brand: #0b5ed7; --muted: #eee; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0 1rem; color:#222; }
+        header { background:var(--brand); color:#fff; padding:1rem; position:sticky; top:0; z-index:10; }
+        nav a { color:#fff; margin-right:1rem; text-decoration:none; padding:.25rem .5rem; border-radius:4px; }
+        nav a[aria-current="page"] { background: rgba(255,255,255,0.12); }
+        main { max-width:900px; margin:1rem auto; }
+        section { padding:1rem 0; border-bottom:1px solid var(--muted); }
+        .hidden { display:none; }
+        footer { text-align:center; padding:1rem 0; color:#666; font-size:.9rem; }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Sistema de Registro de Juegos</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#alumno">Alumno</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section id="inicio" aria-labelledby="inicio-title">
+            <h2 id="inicio-title">Inicio</h2>
+            <h3>Hola mundo mundo</h3>
+            <p>primer mensaje <br>para probar git</p>
+        </section>
+
+        <section id="alumno" aria-labelledby="alumno-title" class="hidden">
+            <h2 id="alumno-title">Alumno</h2>
+            <h3>Correo: nahun@gmail.com</h3>
+            <p>Alumno</p>
+        </section>
+
+        <section id="contacto" aria-labelledby="contacto-title" class="hidden">
+            <h2 id="contacto-title">Contacto</h2>
+            <h3>Correo: infa@gmail.com</h3>
+            <p>Instructor</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Sistema de Registro</p>
+    </footer>
+
+    <script src="app.js" defer></script>
 </body>
 </html>
